@@ -1,0 +1,8 @@
+<h1>Posts!</h1>
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= link_to post.name, post_path(post) %></li>
+    <!-- <li><%= link_to author.email, author_path(author) %></li>
+    <li><%= link_to author.phone_number, author_path(author) %></li> -->
+    <% end %>
+</ul>
